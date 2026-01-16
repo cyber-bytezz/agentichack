@@ -27,7 +27,7 @@ export const SignupPage: React.FC = () => {
 
         setIsLoading(true);
 
-        const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+        const baseUrl = import.meta.env.VITE_API_BASE_URL || 'https://cyberbytezz-agentic-hackathon-api.hf.space/api';
 
         try {
             const response = await axios.post(`${baseUrl}/auth/signup`, {
